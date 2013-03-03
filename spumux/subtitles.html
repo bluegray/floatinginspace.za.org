@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st August 2004), see www.w3.org" />
+  <meta name="generator" content="Bluefish" />
+  <meta name="description" content="Explaining the difference between forced vs. normal subtitles" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="../style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="spumux.css" type="text/css" media="screen" />
+
+  <title>.: Subtitles with dvdauthor and spumux :.</title>
+</head>
+
+<body>
+  <div class="home">
+    <a href="./">&laquo; back</a>
+  </div>
+
+  <div class="google_top_ads center">
+      <script type="text/javascript" src="../google_atr_unit.js"></script>
+      <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+  </div>
+
+  <div class="content">
+    <h1>turning subtitles on with dvdauthor</h1>
+
+    <h2>Forced subtitles vs. normal subtitles</h2>
+
+    <p>This example config for spumux adds 2 seconds of normal subtitles and 2 seconds of forced subtitles to
+    the test clip</p>
+
+    <h3>spumux_config.xml</h3>
+    <pre class="bigger">
+<span class="blue">&lt;</span><span class="blue">subpictures</span><span class="blue">&gt;</span>
+    <span class="blue">&lt;</span><span class="blue">stream</span><span class="blue">&gt;</span>
+        <span class="blue">&lt;</span><span class="blue">spu</span><span class="blue"> </span><span class=
+"maroon">start</span>=<span class="pink">"00:00:00.00"</span><span class="blue"> </span><span class=
+"maroon">end</span>=<span class="pink">"00:00:02.00"</span><span class="blue"> </span><span class=
+"maroon">image</span>=<span class="pink">"test.png"</span><span class="blue"> </span><span class=
+"maroon">force</span>=<span class="pink">"no"</span><span class="blue"> </span><span class=
+"blue">/&gt;</span>
+        <span class="blue">&lt;</span><span class="blue">spu</span><span class="blue"> </span><span class=
+"maroon">start</span>=<span class="pink">"00:00:02.00"</span><span class="blue"> </span><span class=
+"maroon">end</span>=<span class="pink">"00:00:04.00"</span><span class="blue"> </span><span class=
+"maroon">image</span>=<span class="pink">"test.png"</span><span class="blue"> </span><span class=
+"maroon">force</span>=<span class="pink">"yes"</span><span class="blue"> </span><span class=
+"blue">/&gt;</span>
+    <span class="blue">&lt;/stream&gt;</span>
+<span class="blue">&lt;/subpictures&gt;</span>
+</pre>
+
+    <p>This example config for dvdauthor has three titles. Each title consists of the same clip made with the
+    config above. Before each title a &lt;pre&gt; command sets the subtitle to show and after each title a
+    &lt;post&gt; command jumps to the next title.</p>
+
+    <ul>
+      <li>The first title will show no subtitles.</li>
+
+      <li>For the second title the subtitles are set for stream 0 (first stream), but it will not be shown
+      except if it is forced subtitles.</li>
+
+      <li>For the third title, subtitles are also set for stream 0. But now all subtitles will be shown.</li>
+    </ul>
+
+    <p>To enable both forced and unforced subtitles you have to add 64 to the subtitle stream nr.</p>
+
+    <h3>dvdauthor_config.xml</h3>
+    <pre class="bigger">
+<span class="blue">&lt;</span><span class="blue">dvdauthor</span><span class="blue"> </span><span class=
+"maroon">dest</span>=<span class="pink">"test"</span><span class="blue"> &gt;</span>
+    <span class="blue">&lt;</span><span class="blue">vmgm</span><span class="blue">&gt;</span>
+    <span class="blue">&lt;/vmgm&gt;</span>
+    <span class="blue">&lt;</span><span class="blue">titleset</span><span class="blue">&gt;</span>
+        <span class="blue">&lt;</span><span class="blue">titles</span><span class="blue">&gt;</span>
+            <span class="blue">&lt;</span><span class="blue">pgc</span><span class="blue">&gt;</span>
+                <span class="grey">&lt;!</span><span class=
+"grey">-- no subtitles are set --</span><span class="grey">&gt;</span>
+                <span class="blue">&lt;</span><span class="blue">vob</span><span class=
+"blue"> </span><span class="maroon">file</span>=<span class="pink">"sub.mpg"</span><span class=
+"blue"> </span><span class="blue">/&gt;</span>
+                <span class="blue">&lt;</span><span class="blue">post</span><span class=
+"blue">&gt;</span> jump title 2; <span class="blue">&lt;/post&gt;</span>
+            <span class="blue">&lt;/pgc&gt;</span>
+            <span class="blue">&lt;</span><span class="blue">pgc</span><span class="blue">&gt;</span>
+                <span class="grey">&lt;!</span><span class=
+"grey">-- set subtitle register (SPRM 2) to stream 0</span>
+<span class="grey">                     only forced subtitles of stream 0 will be shown --</span><span class=
+"grey">&gt;</span>
+                <span class="blue">&lt;</span><span class="blue">pre</span><span class=
+"blue">&gt;</span> subtitle=0; <span class="blue">&lt;/pre&gt;</span>
+                <span class="blue">&lt;</span><span class="blue">vob</span><span class=
+"blue"> </span><span class="maroon">file</span>=<span class="pink">"sub.mpg"</span><span class=
+"blue"> </span><span class="blue">/&gt;</span>
+                <span class="blue">&lt;</span><span class="blue">post</span><span class=
+"blue">&gt;</span> jump title 3; <span class="blue">&lt;/post&gt;</span>
+            <span class="blue">&lt;/pgc&gt;</span>
+            <span class="blue">&lt;</span><span class="blue">pgc</span><span class="blue">&gt;</span>
+                 <span class="grey">&lt;!</span><span class=
+"grey">-- set subtitle register (SPRM 2) to stream 0</span>
+<span class="grey">                 forced subtitles and regular subtitles of</span>
+<span class="grey">                 stream 0 will be shown --</span><span class="grey">&gt;</span>
+                <span class="blue">&lt;</span><span class="blue">pre</span><span class=
+"blue">&gt;</span> subtitle=64; <span class="blue">&lt;/pre&gt;</span>
+                <span class="blue">&lt;</span><span class="blue">vob</span><span class=
+"blue"> </span><span class="maroon">file</span>=<span class="pink">"sub.mpg"</span><span class=
+"blue"> </span><span class="blue">/&gt;</span>
+                <span class="blue">&lt;</span><span class="blue">post</span><span class=
+"blue">&gt;</span> jump title 1; <span class="blue">&lt;/post&gt;</span>
+            <span class="blue">&lt;/pgc&gt;</span>
+        <span class="blue">&lt;/titles&gt;</span>
+    <span class="blue">&lt;/titleset&gt;</span>
+<span class="blue">&lt;/dvdauthor&gt;</span>
+</pre>
+
+    <p>You can also inlude these commands in the &lt;button&gt; sections if you wanted to.</p>
+
+    <p>Most dvd players will allow you to turn each subtitle stream on/off as you desire - ignoring these
+    commands.</p>
+
+    <p>These test clips worked as expected when I tested it in xine, but ogle for some reason only showed the
+    subtitles when everything (64) was turned on.</p>
+
+    <p>If you want more detailed control over the &lt;pre&gt; and &lt;post&gt; commands I can recommend
+    <a href="http://download.videohelp.com/r0lz/pgcedit/">a free program called pgcedit</a>. It has a handy
+    trace mode that you can use to step through the dvd commands and get an idea of what is going on. You can
+    also use it to change the subtitle color table and various other options after the dvd was authored.</p>
+  </div>
+
+  <div class="home">
+    <a href="http://www.floatinginspace.za.org/">home</a>
+  </div>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+	_uacct = "UA-374538-3";
+	urchinTracker();
+</script>
+</body>
+</html>
