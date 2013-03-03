@@ -1,5 +1,4 @@
 ---
-layout: default
 title: cp2w850.py
 ---
 
