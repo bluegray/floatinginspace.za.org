@@ -1,0 +1,571 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: LightWord\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-12-22 20:57+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Andrei Luca <andrei.luca@info.uaic.ro>\n"
+"Language-Team: Andrei Luca <andrei.luca@info.uaic.ro>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:4
+#: archives.php:61
+#: archives.php:71
+#: index.php:27
+#: page.php:17
+#: single.php:48
+msgid "Not Found"
+msgstr ""
+
+#: 404.php:5
+#: archives.php:61
+#: archives.php:72
+#: index.php:28
+#: page.php:18
+#: single.php:49
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr ""
+
+#: archives.php:10
+#: index.php:18
+msgid "Continue reading"
+msgstr ""
+
+#: comments.php:6
+#: legacy.comments.php:8
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: comments.php:15
+#: index.php:18
+#: legacy.comments.php:12
+msgid "Comments"
+msgstr ""
+
+#: comments.php:16
+msgid "Trackbacks"
+msgstr ""
+
+#: comments.php:17
+#: legacy.comments.php:13
+msgid "( subscribe to comments on this post )"
+msgstr ""
+
+#: comments.php:30
+msgid "&laquo; Older Comments"
+msgstr ""
+
+#: comments.php:31
+msgid "Newer Comments &raquo;"
+msgstr ""
+
+#: comments.php:39
+#: legacy.comments.php:47
+msgid "No comments yet."
+msgstr ""
+
+#: comments.php:41
+#: legacy.comments.php:91
+msgid "Sorry, the comment form is closed at this time."
+msgstr ""
+
+#: comments.php:48
+#: legacy.comments.php:52
+#: single.php:32
+msgid "Leave a comment"
+msgstr ""
+
+#: comments.php:51
+#: legacy.comments.php:55
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: comments.php:56
+#: legacy.comments.php:62
+#, php-format
+msgid "Logged in as %s."
+msgstr ""
+
+#: comments.php:56
+#: legacy.comments.php:62
+msgid "Log out of this account"
+msgstr ""
+
+#: comments.php:56
+#: legacy.comments.php:62
+msgid "Log out &raquo;"
+msgstr ""
+
+#: comments.php:65
+#: legacy.comments.php:67
+msgid "Name"
+msgstr ""
+
+#: comments.php:65
+#: comments.php:68
+#: legacy.comments.php:67
+#: legacy.comments.php:70
+msgid "(required)"
+msgstr ""
+
+#: comments.php:68
+#: legacy.comments.php:70
+msgid "Mail (will not be published)"
+msgstr ""
+
+#: comments.php:71
+#: legacy.comments.php:73
+msgid "Website"
+msgstr ""
+
+#: comments.php:75
+#: legacy.comments.php:81
+msgid "Submit"
+msgstr ""
+
+#: comments.php:75
+msgid "( Cancel )"
+msgstr ""
+
+#: comments.php:85
+msgid "No trackbacks yet."
+msgstr ""
+
+#: comments.php:86
+msgid "Trackbacks are disabled."
+msgstr ""
+
+#: footer.php:7
+#, php-format
+msgid "Copyright %s %s %s &middot; Powered by %s <br/> %s by %s"
+msgstr ""
+
+#: footer.php:11
+msgid "Go to top"
+msgstr ""
+
+#: functions.php:20
+msgid "Layout settings"
+msgstr ""
+
+#: functions.php:22
+#: functions.php:23
+msgid "Original"
+msgstr ""
+
+#: functions.php:22
+msgid "Wider"
+msgstr ""
+
+#: functions.php:26
+msgid "Cufon settings"
+msgstr ""
+
+#: functions.php:28
+#: functions.php:29
+#: functions.php:118
+msgid "Disabled"
+msgstr ""
+
+#: functions.php:28
+#: functions.php:118
+#: functions.php:119
+msgid "Enabled"
+msgstr ""
+
+#: functions.php:28
+msgid "Extra"
+msgstr ""
+
+#: functions.php:32
+msgid "Christmas Joy"
+msgstr ""
+
+#: functions.php:33
+msgid "Because its Christmas! Happy Holidays and thanks for downloading LightWord theme"
+msgstr ""
+
+#: functions.php:38
+msgid "Disable comments on pages"
+msgstr ""
+
+#: functions.php:39
+msgid "Check this box if you would like to DISABLE COMMENTS on pages"
+msgstr ""
+
+#: functions.php:44
+msgid "Custom image header"
+msgstr ""
+
+#: functions.php:45
+msgid "Check this box if you would like to SHOW IMAGE instead Cufon text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Max width: <code>796px</code>"
+msgstr ""
+
+#: functions.php:50
+msgid "Header image height in pixels"
+msgstr ""
+
+#: functions.php:56
+msgid "About author feature"
+msgstr ""
+
+#: functions.php:57
+msgid "Add information about post author on post footer"
+msgstr ""
+
+#: functions.php:62
+msgid "Enjoy this post feature"
+msgstr ""
+
+#: functions.php:63
+msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
+msgstr ""
+
+#: functions.php:68
+msgid "Show categories on front menu"
+msgstr ""
+
+#: functions.php:69
+msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
+msgstr ""
+
+#: functions.php:74
+msgid "Exclude pages from front menu"
+msgstr ""
+
+#: functions.php:75
+msgid "Type the pages id in the box below. Example input: <code>5,19,24</code>"
+msgstr ""
+
+#: functions.php:80
+msgid "Exclude categories from front menu"
+msgstr ""
+
+#: functions.php:81
+msgid "Type the categories id in the box below. Example input: <code>5,19,24</code>"
+msgstr ""
+
+#: functions.php:86
+msgid "Remove home button"
+msgstr ""
+
+#: functions.php:87
+msgid "Remove home button from front menu"
+msgstr ""
+
+#: functions.php:92
+msgid "Remove search box"
+msgstr ""
+
+#: functions.php:93
+msgid "Remove search box and expand space for front menu"
+msgstr ""
+
+#: functions.php:98
+msgid "Remove tags from posts"
+msgstr ""
+
+#: functions.php:99
+msgid "Show only categories in post footer"
+msgstr ""
+
+#: functions.php:104
+msgid "Remove RSS badge"
+msgstr ""
+
+#: functions.php:105
+msgid "Remove RSS badge from blog header"
+msgstr ""
+
+#: functions.php:111
+msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
+msgstr ""
+
+#: functions.php:116
+msgid "Sidebox settings"
+msgstr ""
+
+#: functions.php:118
+msgid "Show only date"
+msgstr ""
+
+#: functions.php:118
+msgid "Show only in posts"
+msgstr ""
+
+#: functions.php:118
+msgid "Last two options together"
+msgstr ""
+
+#: functions.php:122
+msgid "Sidebar settings"
+msgstr ""
+
+#: functions.php:124
+msgid "Two sidebars option is available on Wider layout only"
+msgstr ""
+
+#: functions.php:125
+#: functions.php:126
+msgid "One sidebar"
+msgstr ""
+
+#: functions.php:125
+msgid "Two sidebars"
+msgstr ""
+
+#: functions.php:129
+msgid "Custom CSS"
+msgstr ""
+
+#: functions.php:130
+msgid "Put your custom css code here"
+msgstr ""
+
+#: functions.php:135
+msgid "AdSense"
+msgstr ""
+
+#: functions.php:136
+msgid "Copy your AdSense code and paste it here."
+msgstr ""
+
+#: functions.php:169
+#: functions.php:181
+#: functions.php:713
+msgid "LightWord Settings"
+msgstr ""
+
+#: functions.php:176
+msgid "settings saved"
+msgstr ""
+
+#: functions.php:177
+msgid "settings reset"
+msgstr ""
+
+#: functions.php:185
+msgid "Support the developer"
+msgstr ""
+
+#: functions.php:196
+msgid "General settings"
+msgstr ""
+
+#: functions.php:257
+msgid "Save changes"
+msgstr ""
+
+#: functions.php:263
+msgid "Search for help"
+msgstr ""
+
+#: functions.php:263
+msgid "or"
+msgstr ""
+
+#: functions.php:278
+#: functions.php:290
+msgid "No updates available."
+msgstr ""
+
+#: functions.php:297
+msgid "What is Cufon?"
+msgstr ""
+
+#: functions.php:304
+msgid "Click here to reset all settings"
+msgstr ""
+
+#: functions.php:501
+msgid "Search"
+msgstr ""
+
+#: functions.php:523
+#: functions.php:534
+msgid "Off"
+msgstr ""
+
+#: functions.php:581
+msgid "Posted on"
+msgstr ""
+
+#: functions.php:598
+msgid "delete"
+msgstr ""
+
+#: functions.php:599
+msgid "spam"
+msgstr ""
+
+#: functions.php:600
+msgid "edit"
+msgstr ""
+
+#: functions.php:608
+msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
+msgstr ""
+
+#: functions.php:629
+#: sidebar-child.php:33
+#: sidebar.php:34
+#: alternatives/sidebar_v2.php:48
+msgid "Syndicate this site using RSS"
+msgstr ""
+
+#: functions.php:629
+msgid "Subscribe via RSS"
+msgstr ""
+
+#: functions.php:664
+msgid "F jS, Y - H:i"
+msgstr ""
+
+#: functions.php:666
+msgid "( REPLY )"
+msgstr ""
+
+#: functions.php:667
+#: legacy.comments.php:33
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: header.php:37
+msgid "Home"
+msgstr ""
+
+#: index.php:14
+#: page.php:11
+#: single.php:14
+msgid "PAGES"
+msgstr ""
+
+#: index.php:17
+#: single.php:31
+msgid "Filed under:"
+msgstr ""
+
+#: index.php:17
+#: single.php:31
+msgid "Tagged as:"
+msgstr ""
+
+#: index.php:18
+msgid "1 Comment"
+msgstr ""
+
+#: index.php:18
+#: single.php:32
+msgid "Comments Off"
+msgstr ""
+
+#: index.php:18
+msgid "No Comments"
+msgstr ""
+
+#: index.php:18
+msgid "Read more about"
+msgstr ""
+
+#: index.php:33
+msgid "&laquo; Newer Entries"
+msgstr ""
+
+#: index.php:34
+msgid "Older Entries &raquo;"
+msgstr ""
+
+#: legacy.comments.php:26
+msgid "F jS, Y"
+msgstr ""
+
+#: legacy.comments.php:26
+msgid "edit this comment"
+msgstr ""
+
+#: legacy.comments.php:77
+#, php-format
+msgid "You can use these tags: %s"
+msgstr ""
+
+#: page.php:7
+msgid "Edit this page"
+msgstr ""
+
+#: sidebar-child.php:9
+#: sidebar.php:10
+#: alternatives/sidebar_v2.php:9
+msgid "Pages"
+msgstr ""
+
+#: sidebar-child.php:14
+#: sidebar.php:15
+#: alternatives/sidebar_v2.php:14
+msgid "Categories"
+msgstr ""
+
+#: sidebar-child.php:19
+#: sidebar.php:20
+#: alternatives/sidebar_v2.php:34
+msgid "Blogroll"
+msgstr ""
+
+#: sidebar-child.php:24
+#: sidebar.php:25
+#: alternatives/sidebar_v2.php:39
+msgid "Archive"
+msgstr ""
+
+#: sidebar-child.php:29
+#: sidebar.php:30
+#: alternatives/sidebar_v2.php:44
+msgid "Meta"
+msgstr ""
+
+#: sidebar-child.php:33
+#: sidebar.php:34
+#: alternatives/sidebar_v2.php:48
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr ""
+
+#: sidebar-child.php:34
+#: sidebar.php:35
+#: alternatives/sidebar_v2.php:49
+msgid "The latest comments to all posts in RSS"
+msgstr ""
+
+#: sidebar-child.php:34
+#: sidebar.php:35
+#: alternatives/sidebar_v2.php:49
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr ""
+
+#: single.php:8
+msgid "Edit this post"
+msgstr ""
+
+#: single.php:18
+msgid "Enjoy this article?"
+msgstr ""
+
+#: single.php:19
+msgid "Consider subscribing to our rss feed!"
+msgstr ""
+
+#: single.php:26
+msgid "About"
+msgstr ""
+
+#: single.php:26
+msgid "No description. Please complete your profile."
+msgstr ""
+
