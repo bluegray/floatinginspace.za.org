@@ -1,4 +1,0 @@
-floatinginspace
-===============
-
-floatinginspace.za.org
