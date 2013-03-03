@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="description" content=
+"a Python class to change your Facebook status message." />
+<title>fbStatus - a Python class to change your Facebook status
+message</title>
+<link rel="stylesheet" href="http://floatinginspace.za.org/script_style.css" type="text/css" media="screen" />
+
+</head>
+<body>
+    <div class="header">
+	<pythonheader />
+    </div>
+    <h1>fbStatus</h1>
+    <h2>Python class to change your Facebook status message</h2>
+    <p>Sample code to use it would be:</p>
+    <div class="code">
+	<pre>import facebook_status
+fb = facebook_status.fbStatus()
+fb.change_status('messing around with FB and python')</pre>
+    </div>    
+    <p>
+    Get the source file here: <a href="facebook_status.py">facebook_status.py</a><br />
+    For a similar solution, but in php, see this <a href="http://www.nexdot.net/blog/2007/04/20/updating-facebook-status-using-php/">nexdot.net blog post</a>.
+    </p>
+    <div class="code">
+	<pythoncode />
+    </div>
+    <div class="footer">
+	<pythonfooter />
+    </div>
+</body>
+</html>
