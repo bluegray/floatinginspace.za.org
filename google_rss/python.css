@@ -1,0 +1,19 @@
+pre { font-face: verdana, arial, helvetica, sans-serif; }
+.token_number { color: #CC0044; }
+.token_op { color: #2160A8; font-weight:bold;}
+.token_string { color: #804040; }
+.token_comment { color: #999; }
+.token_name { color: #000000; }
+.token_error { color: #FF8080; }
+.keyword { color: #2160A8; font-weight:bold; }
+.text { color: #000000; }
+.bold { font-weight: bold; }
+
+pre {
+	background-color: #FAF4DC;
+  border: 1px solid #aaaaaa;
+  padding: 1em;
+  margin: 0 2em;
+  font-size: 12px;
+  overflow: auto;
+}
