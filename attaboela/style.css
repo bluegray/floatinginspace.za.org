@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+}
+p {
+    margin: 1em 0;
+}
+
+body{
+    font-family: Calibri, Verdana, sans-serif;
+    font-size: 13px;    
+    background-color: #fff;
+}
+
+div#wrapper {
+    margin: 0 auto;
+    width:760px;
+    position: relative;
+}
+
+div#bottom {
+    width: 760px;
+    height: 40px;
+    background: url('images/bottom.png');
+}
+
+div#middle {
+    width: 760px;
+    background: url('images/middle.png');
+}
+
+div#top {
+    width: 760px; 
+    height: 40px;
+    background: url('images/top.png');
+}
+
+div#stuff {
+    padding: 1em;
+    margin: 0 3em;
+    background-color: #eeeeee;
+}
+
+h1 {
+    font-size: 2em;  
+    margin: 0 0 1em 0;  
+    color: #384048;
+}
+
+h2 {
+    font-size: 1.5em;   
+    color: #456; 
+}
+
+.center {
+    text-align: center;    
+}
+
+img.center {
+    margin-left: auto;   
+    margin-right: auto;   
+    display: block;
+}
+
+img.atta {
+    cursor: url('images/beatle.cur'), auto;
+}
+
+
+@media all and (max-device-width: 480px) {
+
+div#wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+
+div#bottom {
+    width: auto;
+    height: auto;
+    background: none;
+}
+
+div#middle {
+    width: auto;
+    background: none;
+}
+
+div#top {
+    width: auto;
+    height: auto;
+    background: none;
+}
+
+}
+
+

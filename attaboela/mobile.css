@@ -1,0 +1,30 @@
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: small;    
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 1.3em;    
+}
+
+h2 {
+    font-size: 1.1em;    
+}
+
+
+div#stuff {
+    background-color: #eeeeee;
+    border: 2px solid #000;
+    padding: 0 1em;
+}
+
+.center {
+    text-align: center;    
+}
+
+img.center {
+    margin-left: auto;   
+    margin-right: auto;   
+    display: block;
+}
